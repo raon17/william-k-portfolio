@@ -1,0 +1,94 @@
+/* Reset & basic setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+
+body {
+  background-color: #ccdaeb; /* Baby Blue */
+  color: #323244; /* Charcoal */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #91a1ba; /* Blue Gray */
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: background 0.3s ease;
+}
+
+.primary {
+  background-color: #0d659d; /* Blue Grotto */
+  color: white;
+}
+
+.primary:hover {
+  background-color: #094d74;
+}
+
+.secondary {
+  background-color: white;
+  color: #0d659d;
+  border: 2px solid #0d659d;
+}
+
+.secondary:hover {
+  background-color: #0d659d;
+  color: white;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #323244; /* Charcoal */
+  color: white;
+}
