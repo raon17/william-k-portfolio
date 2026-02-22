@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William K Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1>William K</h1>
+    <p>Data Analyst |Python & SQL Developer</p>
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="William K" class="profile-img">
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
+      <div class="skill"><i class="fas fa-database"></i><span>SQL</span></div>
+      <div class="skill"><i class="fas fa-server"></i><span>Flask</span></div>
+      <div class="skill"><i class="fas fa-cogs"></i><span>Airflow</span></div>
+      <div class="skill"><i class="fas fa-cloud"></i><span>AWS/GCP</span></div>
+      <div class="skill"><i class="fab fa-docker"></i><span>Docker</span></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-table-container">
+      <table class="projects-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Title</th>
+            <th>Stacks Used</th>
+            <th>Scope / Note</th>
+            <th>GitHub</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-02</td>
+            <td>API Backend Service</td>
+            <td>Python, Flask, SQLAlchemy</td>
+            <td>REST API serving dynamic content with JWT authentication.</td>
+            <td><a href="https://github.com/william/api-backend" target="_blank">Link</a></td>
+          </tr>
+          <tr>
+            <td>2025-04</td>
+            <td>Data Warehouse Dashboard</td>
+            <td>Python, SQL, Tableau</td>
+            <td>Populated data warehouse and built analytics dashboard.</td>
+            <td><a href="https://github.com/william/data-warehouse" target="_blank">Link</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul class="certifications-list">
+      <li>Google Data Analytics Professional Certificate</li>
+      <li>AWS Certified Data Analytics </li>
+      <li>Certified Data Engineer Google</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-buttons">
+      <a href="mailto:willkim0117@.com" class="btn">Email</a>
+      <a href="https://github.com/raon17" class="btn" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+</body>
+</html>
