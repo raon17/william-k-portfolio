@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #ccdaeb; /* Baby Blue */
-  color: #323244; /* Charcoal */
-  line-height: 1.6;
+  background-color: #ccdaeb;
+  color: #323244;
+  font-family: 'Helvetica', sans-serif;
 }
 
 a {
