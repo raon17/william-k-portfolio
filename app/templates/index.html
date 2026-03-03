@@ -9,14 +9,14 @@
 </head>
 <body>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about">
-    <h1>William K</h1>
-    <p>Data Analyst |Python & SQL Developer</p>
     <img src="{{ url_for('static', filename='profile.jpg') }}" alt="William K" class="profile-img">
+    <h1>William K</h1>
+    <p>Data Analyst &nbsp;|&nbsp; Python &amp; SQL Developer</p>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
@@ -29,51 +29,76 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="projects-table-container">
-      <table class="projects-table">
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <span class="project-card__date">2026-02</span>
+        <h3 class="project-card__title">API Backend Service</h3>
+        <p class="project-card__note">REST API serving dynamic content with JWT authentication.</p>
+        <ul class="project-card__stacks">
+          <li>Python</li><li>Flask</li><li>SQLAlchemy</li>
+        </ul>
+        <a href="https://github.com/william/api-backend" target="_blank" class="project-card__link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+
+      <div class="project-card">
+        <span class="project-card__date">2025-04</span>
+        <h3 class="project-card__title">Data Warehouse Dashboard</h3>
+        <p class="project-card__note">Populated data warehouse and built analytics dashboard.</p>
+        <ul class="project-card__stacks">
+          <li>Python</li><li>SQL</li><li>Tableau</li>
+        </ul>
+        <a href="https://github.com/william/data-warehouse" target="_blank" class="project-card__link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certs-table-container">
+      <table class="certs-table">
         <thead>
           <tr>
-            <th>Date</th>
             <th>Title</th>
-            <th>Stacks Used</th>
-            <th>Scope / Note</th>
-            <th>GitHub</th>
+            <th>Description</th>
+            <th>Stacks</th>
+            <th>Link</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>2026-02</td>
-            <td>API Backend Service</td>
-            <td>Python, Flask, SQLAlchemy</td>
-            <td>REST API serving dynamic content with JWT authentication.</td>
-            <td><a href="https://github.com/william/api-backend" target="_blank">Link</a></td>
+            <td>Google Data Analytics Professional Certificate</td>
+            <td class="desc-cell">Covers the full data analysis workflow — from asking the right questions to sharing actionable insights.</td>
+            <td><div class="stacks-cell"><span class="stack-tag">SQL</span><span class="stack-tag">R</span><span class="stack-tag">Tableau</span><span class="stack-tag">Spreadsheets</span></div></td>
+            <td><a href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank"><i class="fas fa-external-link-alt"></i> View</a></td>
           </tr>
           <tr>
-            <td>2025-04</td>
-            <td>Data Warehouse Dashboard</td>
-            <td>Python, SQL, Tableau</td>
-            <td>Populated data warehouse and built analytics dashboard.</td>
-            <td><a href="https://github.com/william/data-warehouse" target="_blank">Link</a></td>
+            <td>AWS Certified Data Analytics</td>
+            <td class="desc-cell">Expertise in designing and building AWS data lakes, pipelines, and analytics solutions at scale.</td>
+            <td><div class="stacks-cell"><span class="stack-tag">S3</span><span class="stack-tag">Glue</span><span class="stack-tag">Redshift</span><span class="stack-tag">Athena</span><span class="stack-tag">Kinesis</span></div></td>
+            <td><a href="https://aws.amazon.com/certification/certified-data-analytics-specialty/" target="_blank"><i class="fas fa-external-link-alt"></i> View</a></td>
+          </tr>
+          <tr>
+            <td>Certified Data Engineer — Google</td>
+            <td class="desc-cell">Design, build, and operationalize data processing systems on Google Cloud Platform.</td>
+            <td><div class="stacks-cell"><span class="stack-tag">BigQuery</span><span class="stack-tag">Dataflow</span><span class="stack-tag">Pub/Sub</span><span class="stack-tag">Cloud Storage</span></div></td>
+            <td><a href="https://cloud.google.com/certification/data-engineer" target="_blank"><i class="fas fa-external-link-alt"></i> View</a></td>
           </tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul class="certifications-list">
-      <li>Google Data Analytics Professional Certificate</li>
-      <li>AWS Certified Data Analytics </li>
-      <li>Certified Data Engineer Google</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact-buttons">
